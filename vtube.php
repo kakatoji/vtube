@@ -6,7 +6,7 @@
 *script version buchin
 *by kakatoji
 *need error code
-*done all
+*done all 
 **/
 
 function strip(){
@@ -15,7 +15,7 @@ function saveas($data,$data_post){
  if(!file_exists($data)){file_put_contents($data,"[]"); }
  $json=json_decode(file_get_contents($data),1);
 $arr=array_merge($json,$data_post);
-file_put_contents($data,json_encode($arrr,JSON_PRETTY_PRINT));}
+file_put_contents($data,json_encode($arr,JSON_PRETTY_PRINT));}
 function rata($parse,$rate){
 $runs= strlen($parse);
 if($runs < $rate ){ 
